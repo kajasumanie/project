@@ -1,0 +1,14 @@
+<?php
+if($_GET['option']=="selectstudent")
+		include'search/student.php';
+			if($_GET['option']=="Nearest")
+		include'search/Nearest.html';
+			if($_GET['option']=="result")
+		include'search/result.php';
+			if($_GET['option']=="Cadre")
+		include'search/Cadre.php';
+			if($_GET['option']=="phyresource")
+		include'search/phyresource.php';
+	        if($_GET['option']=="schoolcount")
+		include'search/index4.php';
+?>

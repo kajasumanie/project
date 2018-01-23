@@ -1,0 +1,127 @@
+
+<?php
+if(isset($_POST['subna']))
+{
+  if($_POST['summary']=='Zone_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population1' && $_POST['summary2']=='Students_Summary')
+  {
+		header("Location: index.php?table=student_zone_gws_ss");
+  }
+  if($_POST['summary']=='Zone_Wise_Summary' && $_POST['summary1']=='Subject_Religion_Wise_Student_Population1' && $_POST['summary2']=='Group3_Subjects_Students')
+  {
+		header("Location: index.php?table=school_zws_sw_3ss");
+  }
+  if($_POST['summary']=='Division_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population2' && $_POST['summary2']=='Students_Summary')
+  {
+		header("Location: index.php?table=school_dws_gw_ss");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population3' && $_POST['summary2']=='Primary_Students')
+  {
+		header("Location: index.php?table=school_sws_gw_ps");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population3' && $_POST['summary2']=='Secondary_Junior_Students')
+  {
+		header("Location: index.php?table=school_sws_gw_ss");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population3' && $_POST['summary2']=='Secondary_Senior_Students')
+  {
+		header("Location: index.php?table=school_sws_gw_sss");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Grade_Wise_Student_Population3' && $_POST['summary2']=='Students_Summary')
+  {
+		header("Location: index.php?table=school_sws_gw_ssumary");
+  }
+   if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Subject_Religion_Wise_Student_Population1' && $_POST['summary2']=='Group1_Subjects_Students')
+  {
+		header("Location: index.php?table=school_srws_g1ss");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Subject_Religion_Wise_Student_Population1' && $_POST['summary2']=='Group2_Subjects_Students')
+  {
+		header("Location: index.php?table=school_srws_g2ss");
+  }
+  if($_POST['summary']=='School_Wise_Summary' && $_POST['summary1']=='Subject_Religion_Wise_Student_Population1' && $_POST['summary2']=='Group3_Subjects_Students')
+  {
+		header("Location: index.php?table=school_srws_g3ss");
+  }
+   
+}
+
+ ?>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="assets/select-css/select_jquery.css"/>
+<script type="text/javascript" src="search/phyresource.js"></script>
+
+
+<script>
+function next_step1(){
+	document.getElementById("first").style.display="none";
+	document.getElementById("second").style.display="block";
+	document.getElementById("active2").style.color="red";
+	}
+	
+function prev_step1(){
+	document.getElementById("first").style.display="block";
+	document.getElementById("second").style.display="none";
+	document.getElementById("active1").style.color="red";
+	document.getElementById("active2").style.color="gray";
+	}
+
+
+</script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-5">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              
+              <form>
+			  
+			  <div id="prm">
+			  <fieldset id="first">
+				<label>Select one:</label><br/><br/>
+				<select id="select1">
+					<option value='val'>--Select--</option>
+					<option value='Zone_Wise_Summary'>Zone Wise Summary</option>
+					<option value='School_Wise_Summary'>School Wise Summary</option>
+				</select><br/><br/>
+
+				<label>Select one:</label><br/><br/>
+
+				<select id="select2"></select>
+				<br/><br/>
+	
+				<input type="submit" class="submit_btn" value="Submit" name="subna" style="float: right;"/>
+				</fieldset>
+  </div>
+  </form>
+</div>
+     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+   
+  </div>
+</div>
+

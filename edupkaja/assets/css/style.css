@@ -1,0 +1,70 @@
+.about {
+	padding-top: 90px;
+}
+.about-area {
+	background: #f7f7f7;
+	border-top: 2px solid #3498db;
+	border-bottom: 2px solid #3498db;
+	position: relative;
+}
+.title-area {
+	top: -35px;
+	width: 330px;
+	left: 50%;
+	margin-left: -175px;
+	position: absolute;
+}
+.about-title {
+	background: #f7f7f7;
+	border-top: 2px solid #3498db;
+	color: #6f7678;
+	font-size: 2.125em;
+	font-weight: 800;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+.about .title-description {
+	padding-bottom: 15px;
+	margin: 0px;
+}
+.about-items {
+	background: #f7f7f7;
+	display: inline-block;
+	padding-top: 90px;
+}
+.about-items .item {
+	padding-bottom: 60px;
+}
+.item-top {
+	border-top: 1px solid #d7dee0;
+	border-bottom: 1px solid #d7dee0;
+	color: #3498db;
+	padding: 15px 0px;
+}
+.about-items .item-title {
+	font-size: 1.5em;
+	font-weight: 800;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+.about-items .sub-title {
+	font-size: 1.25em;
+	font-weight: 300;
+}
+.about-items .item-description {
+	color: #869093;
+	font-size: .875em;
+	padding: 20px 0px 12px 0px;
+}
+.about-items .btn {
+	background-color: #3498db;
+	color: #ffffff;
+	font-size: .875em;
+	font-weight: 800;	
+	text-transform: uppercase;
+}
+.about-items .btn:hover {
+	background-color: #ffffff;
+	border-color: #3498db;
+	color: #3498db;
+}

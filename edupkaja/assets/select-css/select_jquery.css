@@ -1,0 +1,97 @@
+/* below line is used for online google font */
+
+
+h2{
+text-align: center;
+}
+
+
+div.main{
+width: 320px;
+float:left;
+padding: 10px 60px 40px;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+margin-top: 70px;
+border-radius:5px;
+	box-shadow: 3px 3px 25px 1px gray;
+	
+}
+
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+
+select#select1,#select2,#select3,#select4,#select5,#select6,#select7,#new_select{
+width:100%;
+height:30px;
+font-size:16px;
+
+}
+
+select#Zone_Wise_Summary,
+select#Division_Wise_Summary,
+select#School_Wise_Summary,
+select#Zone_Wise,
+select#Division_Wise,
+{
+display:none;
+width:100%;
+height:30px;
+font-size:16px;
+font-family:cursive;
+}
+
+/* -------------------------------------
+   CSS for sidebar (optional) 
+---------------------------------------- */
+.fugo{
+float:right;
+}
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif); /* to import google font style */ 
+	
+#active1{
+	color:red;
+	}
+	
+fieldset{
+	display:none;
+	
+	}
+
+#first{
+    display:block;
+	
+	}
+	
+input[type=submit],
+input[type=button]{
+	width: 100px;
+	padding: 5px;
+	height: 35px;
+	background-color: sienna;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	}
+
+#next_btn1{
+	display:none;
+	
+	}
+	
+#provi{
+	display:none;
+	
+	}

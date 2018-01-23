@@ -1,0 +1,79 @@
+<?php
+if(isset($_POST['subna']))
+{
+   if($_POST['summary']=='Zone_Wise' && $_POST['summary1']=='Schools' )
+  {
+		header("Location: index.php?table=school_cot_zws_schs");
+  }
+}
+
+ ?>
+<link rel="stylesheet" href="assets/select-css/select_jquery.css"/>
+	<script src="select_jquery4.js"></script>
+  
+<!-- include JavaScript file here-->
+
+
+<script>
+function next_step1(){
+  document.getElementById("first").style.display="none";
+  document.getElementById("second").style.display="block";
+  document.getElementById("active2").style.color="red";
+  }
+  
+
+
+</script>
+
+  <style>    
+   .summary {
+  display: none;
+}
+  </style>
+<br><br>
+  
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-5">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              
+              <form action="" method="post">
+			  
+			  <div id="prm">
+			  <fieldset id="first">
+				<label>Schools Count:</label><br/><br/>
+				<select id="select1" name="summary">
+					<option value='val'>--Select--</option>
+					<option value='Zone_Wise'>Zone Wise</option>
+					<option value='Division_Wise'>Division Wise</option>
+					
+				</select><br/><br/>
+  
+				<label>Select one:</label><br/><br/>
+
+				<select id="select2" name="summary1"></select>
+				<br/><br/>
+
+				<input type="submit" class="submit_btn" value="Submit" name="subna" style="float: right;"/>
+				</fieldset>
+				
+  </div>
+  </form>
+</div>
+     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+   
+  </div>
+</div>
+<br><br>
